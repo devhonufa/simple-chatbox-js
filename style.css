@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 400px;
+    background-color: #ffffff;
+    padding: 50px 10px;
+    box-shadow: 0px 0px 12px #0000008e;
+    margin: 40px 0;
+    border-radius: 20px;
+
+}
+.girlAndBoy{
+    display: flex; 
+    justify-content: space-between;
+}
+.person img{
+  width: 100px;
+}
+/* .person{
+    position: relative;
+} */
+#person1 .content,
+#person2 .content{
+    width: 160px;
+    height: 50px;
+    padding: 5px;
+    background-color: #10dcc7;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center ;
+    border-radius: 40px;
+    margin-left: 60px;
+    position: relative;
+    transition: 2s ease all;
+}
+#person1 .content::after,
+#person2 .content::after{
+   content: "";
+   position: absolute;
+   width: 15px;
+   height: 15px;
+   background-color: #10dcc7;
+   top: 47px;
+   left: 0;
+   border-radius: 40px;
+}
+.content h3{
+    color: #000000;
+}
+#person2 .content::after{
+    position: absolute;
+    top: 47px;
+    left: 9rem;
+}
+#person2 .content{
+    margin-left: -8rem; 
+}
+#person2{
+    margin-top: 140px;
+
+}
+/* .person::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 50px;
+    background-color: #10dcc7;
+    top: -90x;
+    left: 80px;
+   border-radius: 40px;
+} */
